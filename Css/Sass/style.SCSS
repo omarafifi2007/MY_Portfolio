@@ -1,0 +1,246 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: Arial, Helvetica, sans-serif;
+}
+:root
+{
+    --Text-Color: #fff;
+    --Main-Color: #0ef;
+    --bg-color: #1f242d;
+    --Second-bg-color: #323946;
+}
+.Parent
+{
+	width: 100%;
+	height: 100vh;
+	color: var(--Text-Color)!important;
+}
+nav
+{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bg-color);
+}
+nav img
+{
+	width: 100px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.navbar-toggler
+{
+	color: #fff;
+	font-size: 4.1rem!important;
+}
+a
+{
+	text-decoration: none!important;
+}
+.navbar-nav a
+{
+	font-size: 30px;
+	color: #fff!important;
+	transition: 0.5s ease;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    box-shadow: none!important;
+}
+.navbar-nav a:hover {
+    color:var(--Main-Color)!important;
+}
+.Home
+{
+	height: 100%;
+	background: var(--bg-color);
+}
+.Social img
+{
+	width: 3rem;
+    height: 3rem;
+    margin-left: 10px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.Social img:hover
+{
+	transform: scale(1.4);
+    box-shadow: 0 0 1rem var(--Main-Color);
+}
+.BTN
+{
+	border: 0;
+	outline: 0;
+	padding: 6px 25px;
+    border-radius: 4rem;
+    transition: 0.5s ease;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    background: var(--Main-Color);
+    color: var(--Second-bg-color);
+    box-shadow: 0 0 1.5rem var(--Main-Color);
+}
+.BTN:hover
+{
+    box-shadow: none;
+    color: var(--Second-bg-color);
+}
+.img1
+{
+	width: 150px;
+    border-radius: 100px;
+	animation: floatImage 3s ease-in-out infinite;
+}
+@keyframes floatImage
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-2rem);
+    }
+}
+.About
+{
+	background: var(--Second-bg-color);
+}
+.Img1
+{
+	width: 36vw;
+    border-radius: 50%;
+    animation: floatImage 3s ease-in-out infinite;
+}
+span
+{
+	font-weight: bold;
+	color: var(--Main-Color);
+}
+@media (max-width: 990px)
+{
+	.About
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.About .Img1
+	{
+		margin-top: 60px;
+	}
+
+}
+.Services
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background: var(--bg-color);
+}
+.Box
+{
+    height: 310px;
+	margin: 0 auto;
+    border-radius: .7rem;
+    transition: 0.5s ease;
+    background: var(--Second-bg-color);
+    border: 0.2rem solid var(--bg-color);
+}
+.Box img {
+    width: 150px;
+	margin-bottom: 30px;
+    border-radius: 6px;
+}
+.Box:hover {
+    transform: scale(1.1);
+    border-color: var(--Main-Color);
+}
+.Portfolio
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--Second-bg-color);
+}
+.Portfolio .row img
+{
+    border-radius: 20px;
+}
+#BTN, #BTN2
+{
+	margin: auto;
+    width: 230px !important;
+}
+.VideoProject
+{
+	background: var(--bg-color);
+}
+.footer
+{
+    background: var(--Second-bg-color);
+}
+.Footer-Text p
+{
+    border-radius: 0.8rem;
+    background: var(--Main-Color);
+}
+.Hello
+{
+    right: 19px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    bottom: 19px;
+    color: #fff;
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--Main-Color);
+}
+::-webkit-scrollbar
+{
+    background-color: #1f242d;
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 30px;
+    background-color: #0ef;
+}
+.Contact
+{
+    background: var(--bg-color);
+}
+.Gmail  img, .Whats img, .Tele img
+{
+	width: 30px;
+	
+}
+@media (max-width: 490px)
+{
+	.Whats, .Tele
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.P
+	{
+		margin-right: 50px!important;
+	}
+	.Tele
+	{
+		margin-right: 50px!important;
+	}
+}
+.Tele a
+{
+	color: #fff!important;
+	text-decoration: none!important;
+}
